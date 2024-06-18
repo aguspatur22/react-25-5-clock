@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+# 25 + 5 Clock
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a web-based timer that alternates between session and break intervals, commonly known as a Pomodoro Timer. It is designed to help users manage their work and break periods effectively, enhancing productivity and focus.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React: Utilized for its component-based architecture, enabling efficient updates and rendering of the user interface.
+- CSS: Used for styling the timer and controls to provide a clean and intuitive user experience.
+- TypeScript: Offers type safety for variables and functions, enhancing code reliability and maintainability.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Session and Break Intervals: Allows users to set the duration of work sessions and breaks.
+- Dynamic Timer: The timer dynamically counts down session or break time and switches between them automatically.
+- Adjustable Lengths: Users can increase or decrease the length of both session and break periods even during a session.
+- Audio Notification: Plays an audio alert when the timer transitions from a session to a break and vice versa.
+- Responsive Design: The timer interface is fully responsive, ensuring a seamless experience on both desktop and mobile devices.
+- Start/Pause and Reset: Includes controls to start or pause the timer and to reset it to default settings.
 
-- Configure the top-level `parserOptions` property like this:
+## Live Demo
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+You can view the live demo of the application [here](https://25plus5-clock-react.netlify.app/).
